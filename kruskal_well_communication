@@ -1,0 +1,41 @@
+def read_file(filename):
+    graph = {}
+    with open(filename) as f:
+        for line in f:
+            well1, well2, distance = line.strip().split(',')
+            if well1 not in graph:
+                graph[well1] = []
+            if well2 not in graph:
+                graph[well2] = []
+            graph[well1].append((int(distance), well1, well2))
+            graph[well2].append((int(distance), well2, well1))
+    return graph
+
+
+def min_cable_length(graph):
+    mst = []
+    visited = set()
+    total_distance = 0
+
+    start_node = next(iter(graph))
+    visited.add(start_node)
+
+    edges = []
+    for node in graph.values():
+        edges.extend(node)
+
+    edges.sort()
+
+    for distance, well1, well2 in edges:
+        if well1 in visited and well2 in visited:
+            continue
+        elif well1 in visited or well2 in visited:
+            mst.append((well1, well2))
+            total_distance += distance
+            visited.add(well1)
+            visited.add(well2)
+
+    if len(visited) == len(graph):
+        return total_distance
+    else:
+        return -1
