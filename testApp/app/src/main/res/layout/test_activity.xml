@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_background"
+    android:orientation="vertical"
+    android:weightSum="800"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/button1"
+            style="@style/TopGreenButton"
+            android:background="@drawable/shape_green_rectangle"
+            android:text="Button1"
+            android:layout_weight="1"/>
+
+        <android.widget.Button
+            android:id="@+id/button2"
+            style="@style/TopGreenButton"
+            android:background="@drawable/shape_green_rectangle"
+            android:text="Button2"
+            android:layout_weight="1"/>
+
+        <android.widget.Button
+            android:id="@+id/button3"
+            style="@style/TopGreenButton"
+            android:background="@drawable/shape_green_rectangle"
+            android:text="Button3"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="0dp"
+            android:layout_weight="78"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="12dp"
+            android:inputType="text"
+            android:background="@drawable/shape_search_bar"
+            android:hint="Search"
+            android:paddingStart="25dp"
+            android:paddingEnd="5dp"
+            android:textColorHint="@color/akcent2"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:src="@drawable/img_sort_button"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editTextText"
+            app:layout_constraintTop_toTopOf="@+id/editTextText"
+            android:layout_marginHorizontal="12dp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="720"
+        android:layout_marginTop="16dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linerForPackages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.widget.Button
+                android:id="@+id/packegeTopButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesTopButtons"
+                android:layout_marginTop="0dp"
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeBottomButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesBottomButtons"
+
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeTopButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesTopButtons"
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeBottomButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesBottomButtons"
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeTopButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesTopButtons"
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeBottomButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesBottomButtons"
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeTopButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesTopButtons"
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeBottomButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesBottomButtons"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_shopping_bag"
+            style="@style/NavigateBarButtons"
+
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_heart"
+            style="@style/NavigateBarButtons"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_person"
+            style="@style/NavigateBarButtons"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

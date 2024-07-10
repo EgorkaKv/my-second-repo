@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/root_background"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.widget.Button
+            android:id="@+id/button1"
+            style="@style/TopGreenButton"
+            android:background="@drawable/shape_green_rectangle"
+            android:text="Button1"
+            android:layout_weight="1"/>
+
+        <android.widget.Button
+            android:id="@+id/button2"
+            style="@style/TopGreenButton"
+            android:background="@drawable/shape_green_rectangle"
+            android:text="Button2"
+            android:layout_weight="1"/>
+
+        <android.widget.Button
+            android:id="@+id/button3"
+            style="@style/TopGreenButton"
+            android:background="@drawable/shape_green_rectangle"
+            android:text="Button3"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.78"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        android:background="@drawable/shape_search_bar"
+        android:hint="Search"
+        android:paddingStart="25dp"
+        android:paddingEnd="5dp"
+        android:textColorHint="@color/akcent2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/img_sort_button"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextText"
+        app:layout_constraintTop_toTopOf="@+id/editTextText" />
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linerForPackages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.widget.Button
+                android:id="@+id/packegeTopButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesTopButtons"
+                android:layout_marginTop="0dp"
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeBottomButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesBottomButtons"
+
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeTopButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesTopButtons"
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeBottomButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesBottomButtons"
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeTopButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesTopButtons"
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeBottomButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesBottomButtons"
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeTopButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesTopButtons"
+                />
+
+            <android.widget.Button
+                android:id="@+id/packegeBottomButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PackagesBottomButtons"
+                />
+
+        </LinearLayout>
+    </ScrollView> -->
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is Lorem Ipsum?"
+                android:textSize="34sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry...like Aldus PageMaker including versions of Lorem Ipsum."
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Why do we use it?"
+                android:layout_marginTop="16dp"
+                android:textSize="34sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry...like Aldus PageMaker including versions of Lorem Ipsum."
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Where can I get some?"
+                android:layout_marginTop="16dp"
+                android:textSize="34sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="There are many variations of passages of Lorem Ipsum available ... or non-characteristic words etc."
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_shopping_bag"
+            style="@style/NavigateBarButtons"
+
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_heart"
+            style="@style/NavigateBarButtons"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_person"
+            style="@style/NavigateBarButtons"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
