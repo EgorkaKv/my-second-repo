@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="root_background">#1E1E1E</color>
-    <color name="akcent2">#44514A</color>
+    <color name="black">#FF00000</color>
+    <color name="whiteeee">#FFFFFFFF</color>
+    <color name="roott_background">#1E1E1F</color>
+    <color name="akcent2222">#44514A</color>
 </resources>
