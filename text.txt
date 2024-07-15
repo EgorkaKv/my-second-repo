@@ -1,4 +1,4 @@
-my-pc
+upd in second
 v2 on local my-pc
 v3 - format brnach:branch
 v4 - format branch:new-branch
